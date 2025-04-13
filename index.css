@@ -2,7 +2,10 @@ body{
     background-color: aqua;
     background-image: url("https://cdn.pixabay.com/photo/2016/10/29/09/53/abstract-1780277_1280.png");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    background-position: center;
+    
+
 
 
 }
@@ -10,8 +13,10 @@ h2{
     color: purple;
 }
 #con1{
-    height: 40vh;
-    width: 70%;
+    min-height: 40vh;
+
+    width: 90%;
+    max-width: 1000px;
     background-color: whitesmoke;
     color: black;
     align-items: center;
@@ -19,21 +24,27 @@ h2{
     justify-content: space-around;
     position: relative;
     margin: 40px auto;
-    border-radius: 20px;
+    border-radius: 20px ;
    
 }
 
-#d1{
-    height: 200px;
-    width: 200px;
-    background-color: blue;
-    position: relative;
-    margin-left: 5px;
-    border-radius: 70%;
+
+
+#d1 {
+        min-height: 200px;
+        width: 200px;
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        border-radius: 50%;
+ }
+    
    
-}
+
 #d2{
-    height: 250px;
+    min-height: 250px;
     width: 650px;
     position: relative;
     margin-right: 20px;
@@ -41,8 +52,10 @@ h2{
 
 }
 #con2{
-    height: 40vh;
-    width: 70%;
+    min-height: 40vh;
+
+    width: 90%;
+    max-width: 1000px;
     background-color: whitesmoke;
     color: black;
     align-items: center;
@@ -54,19 +67,19 @@ h2{
 }
 
 #b1{
-    height: 270px;
+    min-height: 270px;
     width: 270px;
     
     border-radius: 20px;
 }
 #b2{
-    height: 270px;
+    min-height: 270px;
     width: 270px;
    
     border-radius: 20px;
 }
 #b3{
-    height: 270px;
+    min-height: 270px;
     width: 270px;
 
     border-radius: 20px;
@@ -77,3 +90,53 @@ h2{
     top: 5px;
     font-size: large;
 }
+
+#con1,#con2{
+   
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+         align-items: center;
+        width: 90%;
+        margin: 20px auto;
+        
+
+}
+@media (max-width: 768px) {
+    #con1, #con2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #d1, #d2, #b1, #b2, #b3 {
+        width: 90%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    #d2 {
+        text-align: center;
+    }
+
+    #a {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+}
+#b1, #b2, #b3 {
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Optional for style */
+}
+
+#d1 img {
+    width: 100%;
+    height: auto;
+    max-width: 180px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
