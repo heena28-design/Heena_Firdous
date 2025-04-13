@@ -15,6 +15,7 @@ h2{
 }
 #con1{
     min-height: 40vh;
+
     width: 90%;
     max-width: 1000px;
     background-color: white;
@@ -52,6 +53,7 @@ h2{
 }
 #con2{
     min-height: 40vh;
+
     width: 90%;
     max-width: 1000px;
     background-color: white;
@@ -99,10 +101,29 @@ h2{
 
 @media (max-width: 768px) {
     #con1, #con2 {
+        
         align-items: center;
     }
-}
 
+    #d1, #d2, #b1, #b2, #b3 {
+        width: 90%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    #d2 {
+        text-align: center;
+    }
+
+    #a {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+}
+#b1, #b2, #b3 {
+    padding: 15px;
+   
+}
 
 #d1 img {
     width: 100%;
