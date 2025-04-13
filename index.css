@@ -6,9 +6,6 @@ body{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-
-
-
 }
 h2{
     color: purple;
@@ -86,6 +83,7 @@ h2{
     position: relative;
     top: 5px;
     font-size: large;
+    margin-left: 5px;
 }
 
 #con1,#con2{
